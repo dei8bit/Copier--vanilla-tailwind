@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <title>Copiar al portapapeles con JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+  <div class="flex place-content-center "> 
+      <section class=" h-96 max-w-xl border-y-4 border-indigo-500 rounded-lg p-12 m-12 flex flex-col items-center">
+        <h1  class="animate-bounce rounded-full text-lg p-4" >COPIADOR</h1>            
+        <div class="flex justify-center">
+          <div class="mb-3 xl:w-96" >
+            <textarea
+              class="hover:duration-200 border-4 border-rose-200 p-3 resize-none rounded-lg  peer block min-h-[auto] w-full rounded border-0 bg-transparent leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-0"
+              id="textArea"
+              rows="3"
+              placeholder="Escriba aqui...♥"></textarea>            
+          </div>
+        </div>  
+
+        <div  id="seccion"   class=" m-6 inline-flex w-fit">          
+            <button class="ease-in duration-200 p-4 text-purple-600 rounded-full border border-purple-200 hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" id="btn"><img class="h-8" src="copy.png"></button>          
+        </div>
+    </section>    
+  </div>
+    <script src="copy.js"></script> 
+  </body>
+</html>
